@@ -1,0 +1,239 @@
+@import url("https://fonts.googleapis.com/css?family=Barlow+Condensed:400,500|Abril+Fatface");
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0; }
+
+.container {
+  box-sizing: border-box;
+  width: 100vw;
+  padding: 0 0.5em; }
+
+body {
+  color: black;
+  font-family: "Times New Roman";
+  font-size: 100%; }
+
+.columns {
+  column-width: 40ch;
+  column-gap: 0;
+  column-rule: 1px solid black; }
+
+.article {
+  margin: 0.75em 0.5em;
+  margin-top: 0;
+  break-inside: avoid-column; }
+  .article__ruler {
+    width: 10ch;
+    border: 0;
+    height: 1px;
+    background-color: black;
+    margin: 0.75em auto; }
+    .article__ruler:first-of-type {
+      margin-top: 0; }
+  .article__title {
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    display: block; }
+  .article__author {
+    text-align: center; }
+  .article__text {
+    padding-top: 0.25em; }
+    .article__text p {
+      margin: 0;
+      text-indent: 2ch;
+      line-height: 1.3em; }
+    .article__text figure {
+      margin: 0.5em auto; }
+      .article__text figure figcaption {
+        font-size: 0.95em;
+        text-align: center;
+        padding: 0.25em 0; }
+    .article__text pre {
+      width: 100%;
+      overflow-y: scroll; }
+    .article__text hr {
+      width: 10ch;
+      border: 0;
+      height: 1px;
+      background-color: black;
+      margin: 0.75em auto; }
+    .article__text h1, .article__text h2 {
+      font-size: 1em;
+      font-weight: bold;
+      text-align: center; }
+    .article__text a {
+      color: black; }
+      .article__text a:hover {
+        text-decoration: none; }
+    .article__text .kg-gallery-image img {
+      width: 100%;
+      height: 100%; }
+    .article__text .kg-gallery-container, .article__text .kg-gallery-row {
+      width: 100%; }
+    .article__text .kg-image {
+      width: 100%; }
+  .article__figure {
+    margin: 0.5em auto;
+    margin-top: 0; }
+    .article__figure figcaption {
+      font-size: 0.95em;
+      text-align: center;
+      padding: 0.25em 0; }
+
+.article--regular .article__title {
+  font-family: "Barlow Condensed";
+  font-size: 1.8em;
+  font-weight: 500;
+  text-transform: uppercase; }
+.article--regular .article__author {
+  font-size: 0.7em; }
+.article--regular .article__text {
+  font-size: 1em; }
+
+.article--framed .article__outline {
+  border: 1px solid black;
+  padding: 0.6em; }
+.article--framed .article__ruler:first-of-type {
+  display: none; }
+.article--framed .article__title {
+  font-family: "Times New Roman";
+  font-size: 1.3em;
+  font-style: italic;
+  font-weight: bold; }
+.article--framed .article__author {
+  font-size: 0.7em; }
+.article--framed .article__text {
+  font-size: 0.95em; }
+
+.article--framed .author__name {
+  text-transform: uppercase; }
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5em 2em; }
+  .head__name {
+    font-family: "Abril Fatface";
+    font-size: 3em;
+    line-height: 1em;
+    color: black;
+    text-decoration: none;
+    display: block; }
+    .head__name--image {
+      height: 1em; }
+      .head__name--image img {
+        height: 100%; }
+
+.date {
+  border: 1px solid black;
+  border-left: none;
+  border-right: none;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.1em; }
+  .date:after {
+    border: 1px solid black;
+    border-left: none;
+    border-right: none;
+    position: absolute;
+    top: -4px;
+    left: 0px;
+    right: 0px;
+    bottom: -4px;
+    content: "";
+    display: block;
+    z-index: -10; }
+  .date__item {
+    font-size: 1em;
+    text-transform: uppercase;
+    color: black;
+    text-decoration: none;
+    display: block; }
+
+.blockie {
+  border: 1px solid black;
+  font-family: "Barlow Condensed";
+  font-size: 1.2em;
+  font-weight: 400;
+  width: 15ch;
+  text-align: center; }
+  .blockie--hidden {
+    opacity: 0; }
+
+.headline {
+  font-family: "Times New Roman";
+  font-size: 5em;
+  font-style: italic;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 0.85em;
+  text-align: justify;
+  padding-top: 0.1em;
+  color: black;
+  text-decoration: none;
+  display: block; }
+
+.columns {
+  margin-top: 0.5em; }
+
+.fullwidth {
+  margin: 3em auto;
+  width: 70ch;
+  max-width: 90vw; }
+  .fullwidth__title {
+    font-family: "Barlow Condensed";
+    font-size: 1.8em;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 1em; }
+  .fullwidth__authors {
+    margin-bottom: 1em; }
+  .fullwidth__content p {
+    margin: 0;
+    text-indent: 2ch;
+    line-height: 1.3em; }
+  .fullwidth__content figure {
+    margin: 0.5em auto; }
+    .fullwidth__content figure figcaption {
+      font-size: 0.95em;
+      text-align: center;
+      padding: 0.25em 0; }
+  .fullwidth__content pre {
+    width: 100%;
+    overflow-y: scroll; }
+  .fullwidth__content hr {
+    width: 10ch;
+    border: 0;
+    height: 1px;
+    background-color: black;
+    margin: 0.75em auto; }
+  .fullwidth__content h1, .fullwidth__content h2 {
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center; }
+  .fullwidth__content a {
+    color: black; }
+    .fullwidth__content a:hover {
+      text-decoration: none; }
+  .fullwidth__content .kg-gallery-image img {
+    width: 100%;
+    height: 100%; }
+  .fullwidth__content .kg-gallery-container, .fullwidth__content .kg-gallery-row {
+    width: 100%; }
+  .fullwidth__content p {
+    margin-bottom: 1em; }
+  .fullwidth__content .kg-image {
+    width: 100%; }
+  .fullwidth__content .kg-width-wide img {
+    width: 100%; }
+  .fullwidth__content .kg-width-full img {
+    width: 100%; }
+
+/*# sourceMappingURL=theme.css.map */
