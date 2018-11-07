@@ -188,6 +188,7 @@ body {
 
 .fullwidth {
   margin: 3em auto;
+  margin-bottom: 0;
   width: 70ch;
   max-width: 90vw; }
   .fullwidth__title {
@@ -239,6 +240,12 @@ body {
     width: 100%; }
   .fullwidth__content .kg-width-full img {
     width: 100%; }
+  .fullwidth__next-link {
+    margin: 3em auto;
+    color: black;
+    display: block;
+    width: 100%;
+    text-align: center; }
 
 .footer {
   border-top: 1px solid black; }
