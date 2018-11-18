@@ -21,8 +21,8 @@ body {
   column-rule: 1px solid black; }
 
 .article {
-  margin: 0.75em 0.5em;
-  margin-top: 0;
+  padding: 0.75em 0.5em;
+  padding-top: 0;
   break-inside: avoid-column; }
   .article__ruler {
     width: 10ch;
